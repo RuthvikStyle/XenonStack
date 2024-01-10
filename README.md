@@ -1,17 +1,17 @@
 # XenonStack
 Task 1 of Linux commands and Task 2 is of Web Development
 
-###### Task 1
-# internsct1
+# Task 1
+## internsct1
 `internsctl` is a custom Linux command designed by Ruthvik. It provides various functionalities related to system information and user management.
 
 ## Features
 
-### CPU Information
+## CPU Information
 ```./internsctl``` cpu getinfo
 Displays CPU information similar to the lscpu command.
 
-# Memory Information
+## Memory Information
 `./internsctl memory getinfo`
 Displays memory information similar to the free command.
 
@@ -55,7 +55,7 @@ Current version: v0.1.0
 
 
 
-###### Task2
+# Task2
 ## Web Development
 
 
