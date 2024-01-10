@@ -54,4 +54,55 @@ else
                         else
                             echo "$sudo_users"
                         fi
+                    else
+                        cut -d: -f1 /etc/passwd
+                    fi
+                    ;;
 
+                *)
+                    echo "Invalid flags"
+                    ;;
+            esac
+            ;;
+
+        "file")
+            case $2 in
+                getinfo)
+                    shift
+                    case $2 in
+                        --size)
+                            du "$3"
+                            ;;
+                        --permissions)
+                            ls -l "$3" | awk '{ print $1 }'
+                            ;;
+                        --owner)
+                            ls -l "$3" | awk '{ print $3 }'
+                            ;;
+                        --last-modified)
+                            stat "$3" | grep "Modify" | awk -F'[:.]' '{ print $2 }'
+                            ;;
+                        *)
+                            file_details=$(ls -l "$2")
+                            echo "
+                                  File        $2
+                                  Access:     $(echo "$file_details" | awk '{ print $1 }')
+                                  Size:       $(du "$2" | awk '{ print $1 }')
+                                  Owner:      $(echo "$file_details" | awk '{ print $3 }')
+                                  Modify:     $(stat "$2" | grep "Modify" | awk -F'[:.]' '{ print $2 }')
+                                "
+                            ;;
+                    esac
+                    ;;
+                *)
+                    echo "Invalid file command"
+                    ;;
+            esac
+            ;;
+
+        *)
+            echo "Invalid option. Use --version or --help for more information."
+            exit 1
+            ;;
+    esac
+fi
