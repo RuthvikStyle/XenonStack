@@ -2,54 +2,55 @@
 Task 1 of Linux commands and Task 2 is of Web Development
 
 # Task 1
-## internsct1
+## Linux
+### internsct1
 `internsctl` is a custom Linux command designed by Ruthvik. It provides various functionalities related to system information and user management.
 
 ## Features
 
-## CPU Information
+1. CPU Information
 ```./internsctl``` cpu getinfo
 Displays CPU information similar to the lscpu command.
 
-## Memory Information
+2. Memory Information
 `./internsctl memory getinfo`
 Displays memory information similar to the free command.
 
-## User Management
+3. User Management
 `./internsctl user create <username>`
 Creates a new user with the specified username, allowing them to log in and access their home directory.
 
-## List All Regular Users
+4. List All Regular Users
 `./internsctl user list`
 Lists all regular users on the system.
 
-## List Users with Sudo Permissions
+5. List Users with Sudo Permissions
 `./internsctl user list-sudo`
 Lists all users with sudo permissions on the system.
 
-## File Information
+6. File Information
 Get Information About a File
 `./internsctl file getinfo <file-name>`
 Displays information about the specified file, including size, permissions, owner, and last modified time.
 
-## Options for File Information
-Get File Size
+7. Options for File Information
+a. Get File Size
 `./internsctl file getinfo --size <file-name>`
 
-Get File Permissions
+b. Get File Permissions
 `./internsctl file getinfo --permissions <file-name>`
 
-Get File Owner
+c. Get File Owner
 `./internsctl file getinfo --owner <file-name>`
 
 Get Last Modified Time
 `./internsctl file getinfo --last-modified <file-name>`
 
-## Usage
+8. Usage
 For detailed usage instructions and options, refer to the help message:
 `./internsctl --help`
 
-## Version
+9. Version
 `--version`
 Current version: v0.1.0
 
