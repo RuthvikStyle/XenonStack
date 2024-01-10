@@ -1,18 +1,18 @@
 import React from 'react'
+import signupImg from "../assets/signup.png"
 import Template from '../components/Template'
-import loginImg from "../assets/login.png"
 
-const Login = ({setIsLoggedIn}) => {
+const Signup = ({setIsLoggedIn}) => {
   return (
     <Template
-      title="Welcome Back"
+      title="Join the millions learning to code with StudyNotion for free"
       desc1="Build skills for today, tomorrow, and beyond."
       desc2="Education to future-proof your career."
-      image={loginImg}
-      formType="login"
+      image={signupImg}
+      formType="signup"
       setIsLoggedIn={setIsLoggedIn}
     />
   )
 }
 
-export default Login
+export default Signup
