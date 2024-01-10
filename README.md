@@ -12,66 +12,45 @@ Task 1 of Linux commands and Task 2 is of Web Development
 ./internsctl cpu getinfo
 Displays CPU information similar to the lscpu command.
 
-Memory Information
-bash
-Copy code
+# Memory Information
 ./internsctl memory getinfo
 Displays memory information similar to the free command.
 
-User Management
-Create a New User
-bash
-Copy code
+## User Management
 ./internsctl user create <username>
 Creates a new user with the specified username, allowing them to log in and access their home directory.
 
-List All Regular Users
-bash
-Copy code
+## List All Regular Users
 ./internsctl user list
 Lists all regular users on the system.
 
-List Users with Sudo Permissions
-bash
-Copy code
+## List Users with Sudo Permissions
 ./internsctl user list-sudo
 Lists all users with sudo permissions on the system.
 
-File Information
+## File Information
 Get Information About a File
-bash
-Copy code
 ./internsctl file getinfo <file-name>
 Displays information about the specified file, including size, permissions, owner, and last modified time.
 
-Options for File Information
+## Options for File Information
 Get File Size
-
-bash
-Copy code
 ./internsctl file getinfo --size <file-name>
+
 Get File Permissions
-
-bash
-Copy code
 ./internsctl file getinfo --permissions <file-name>
+
 Get File Owner
-
-bash
-Copy code
 ./internsctl file getinfo --owner <file-name>
+
 Get Last Modified Time
-
-bash
-Copy code
 ./internsctl file getinfo --last-modified <file-name>
-Usage
-For detailed usage instructions and options, refer to the help message:
 
-bash
-Copy code
+## Usage
+For detailed usage instructions and options, refer to the help message:
 ./internsctl --help
-Version
+
+## Version
 Current version: v0.1.0
 
 
@@ -99,15 +78,10 @@ Setup and Installation
 Follow these steps to set up and run the project locally:
 
 Clone the Repository:
-
-bash
-Copy code
 git clone https://github.com/your-username/my-website.git
 cd my-website
 Install Dependencies:
 
-bash
-Copy code
 npm install
 Database Setup:
 
@@ -115,8 +89,6 @@ Ensure you have MongoDB installed and running.
 Configure the database connection in server.js.
 Run the Server:
 
-bash
-Copy code
 node server.js
 Access the Website:
 Open your web browser and go to http://localhost:3000 to view the website.
