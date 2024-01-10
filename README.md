@@ -1,7 +1,8 @@
 # XenonStack
 Task 1 of Linux commands and Task 2 is of Web Development
 
-# internsctl
+###### Task 1
+# internsct1
 `internsctl` is a custom Linux command designed by Ruthvik. It provides various functionalities related to system information and user management.
 
 ## Features
@@ -11,44 +12,45 @@ Task 1 of Linux commands and Task 2 is of Web Development
 Displays CPU information similar to the lscpu command.
 
 # Memory Information
-./internsctl memory getinfo
+`./internsctl memory getinfo`
 Displays memory information similar to the free command.
 
 ## User Management
-./internsctl user create <username>
+`./internsctl user create <username>`
 Creates a new user with the specified username, allowing them to log in and access their home directory.
 
 ## List All Regular Users
-./internsctl user list
+`./internsctl user list`
 Lists all regular users on the system.
 
 ## List Users with Sudo Permissions
-./internsctl user list-sudo
+`./internsctl user list-sudo`
 Lists all users with sudo permissions on the system.
 
 ## File Information
 Get Information About a File
-./internsctl file getinfo <file-name>
+`./internsctl file getinfo <file-name>`
 Displays information about the specified file, including size, permissions, owner, and last modified time.
 
 ## Options for File Information
 Get File Size
-./internsctl file getinfo --size <file-name>
+`./internsctl file getinfo --size <file-name>`
 
 Get File Permissions
-./internsctl file getinfo --permissions <file-name>
+`./internsctl file getinfo --permissions <file-name>`
 
 Get File Owner
-./internsctl file getinfo --owner <file-name>
+`./internsctl file getinfo --owner <file-name>`
 
 Get Last Modified Time
-./internsctl file getinfo --last-modified <file-name>
+`./internsctl file getinfo --last-modified <file-name>`
 
 ## Usage
 For detailed usage instructions and options, refer to the help message:
-./internsctl --help
+`./internsctl --help`
 
 ## Version
+`--version`
 Current version: v0.1.0
 
 
@@ -69,20 +71,21 @@ The project is divided into three main pages:
 ## Setup and Installation
 Follow these steps to set up and run the project locally:
 
-Clone the Repository: git clone https://github.com/your-username/my-website.git
-cd my-website
-Install Dependencies:
+1. Clone the Repository: `git clone https://github.com/your-username/my-website.git
+cd my-website`
 
-npm install
-Database Setup:
+2. Install Dependencies:
+`npm install`
 
-Ensure you have MongoDB installed and running.
-Configure the database connection in server.js.
-Run the Server:
+3. Database Setup:
+a. Ensure you have MongoDB installed and running.
+b. Configure the database connection in server.js.
 
-node server.js
-Access the Website:
-Open your web browser and go to http://localhost:3000 to view the website.
+4. Run the Server:
+`node server.js`
+
+5. Access the Website:
+Open your web browser and go to `http://localhost:3000` to view the website.
 
 ## Dependencies
 The project relies on the following Node.js packages:
