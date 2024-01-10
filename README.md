@@ -7,8 +7,6 @@ Task 1 of Linux commands and Task 2 is of Web Development
 ## Features
 
 ### CPU Information
-
-```bash
 ./internsctl cpu getinfo
 Displays CPU information similar to the lscpu command.
 
@@ -55,30 +53,23 @@ Current version: v0.1.0
 
 
 
-//Task2
-Web Development
+###### Task2
+## Web Development
 
 
-My Website
+## My Website
 Welcome to the repository for "My Website," a simple web project designed to showcase basic functionality and features. Below, you'll find information on setting up the project, its structure, and how to run it.
 
-Project Structure
+## Project Structure
 The project is divided into three main pages:
+1. Home Page (index.html): Displays a welcome message and basic content.
+2. Login Page (login.html): Features a login form connected to a MongoDB database for authentication.
+3. Contact Us Page (contact.html): Includes a contact form whose submissions are stored in a MongoDB database.
 
-Home Page (index.html):
-
-Displays a welcome message and basic content.
-Login Page (login.html):
-
-Features a login form connected to a MongoDB database for authentication.
-Contact Us Page (contact.html):
-
-Includes a contact form whose submissions are stored in a MongoDB database.
-Setup and Installation
+## Setup and Installation
 Follow these steps to set up and run the project locally:
 
-Clone the Repository:
-git clone https://github.com/your-username/my-website.git
+Clone the Repository: git clone https://github.com/your-username/my-website.git
 cd my-website
 Install Dependencies:
 
@@ -93,17 +84,18 @@ node server.js
 Access the Website:
 Open your web browser and go to http://localhost:3000 to view the website.
 
-Dependencies
+## Dependencies
 The project relies on the following Node.js packages:
-express
-mongoose
-express-session
-bcrypt
+- express
+- mongoose
+- express-session
+- bcrypt
 Make sure to install these dependencies using npm install.
 
-Additional Information
+## Additional Information
 The project includes a responsive design using CSS media queries for basic desktop and mobile support.
 The login and contact form functionalities are connected to a MongoDB database.
 Feel free to explore and enhance the project as needed.
 
+## Thanks
 Thank you for checking out "My Website"! If you have any questions or suggestions, feel free to reach out.
