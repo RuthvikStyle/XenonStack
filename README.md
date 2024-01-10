@@ -7,7 +7,7 @@ Task 1 of Linux commands and Task 2 is of Web Development
 ## Features
 
 ### CPU Information
-./internsctl cpu getinfo
+```./internsctl``` cpu getinfo
 Displays CPU information similar to the lscpu command.
 
 # Memory Information
