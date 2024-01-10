@@ -34,7 +34,7 @@ Get Information About a File
 Displays information about the specified file, including size, permissions, owner, and last modified time.
 
 7. Options for File Information
-a. Get File Size
+  a. Get File Size
 `./internsctl file getinfo --size <file-name>`
 
 b. Get File Permissions
