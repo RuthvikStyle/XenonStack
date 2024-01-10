@@ -1,105 +1,70 @@
-# XenonStack
-Task 1 of Linux commands and Task 2 is of Web Development
+# Getting Started with Create React App
 
-# Task 1
-## Linux
-### internsct1
-`internsctl` is a custom Linux command designed by Ruthvik. It provides various functionalities related to system information and user management.
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Features
+## Available Scripts
 
-1. CPU Information
-```./internsctl``` cpu getinfo
-Displays CPU information similar to the lscpu command.
+In the project directory, you can run:
 
-2. Memory Information
-`./internsctl memory getinfo`
-Displays memory information similar to the free command.
+### `npm start`
 
-3. User Management
-`./internsctl user create <username>`
-Creates a new user with the specified username, allowing them to log in and access their home directory.
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-4. List All Regular Users
-`./internsctl user list`
-Lists all regular users on the system.
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-5. List Users with Sudo Permissions
-`./internsctl user list-sudo`
-Lists all users with sudo permissions on the system.
+### `npm test`
 
-6. File Information
-Get Information About a File
-`./internsctl file getinfo <file-name>`
-Displays information about the specified file, including size, permissions, owner, and last modified time.
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-7. Options for File Information
-  a. Get File Size
-`./internsctl file getinfo --size <file-name>`
+### `npm run build`
 
-b. Get File Permissions
-`./internsctl file getinfo --permissions <file-name>`
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-c. Get File Owner
-`./internsctl file getinfo --owner <file-name>`
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-Get Last Modified Time
-`./internsctl file getinfo --last-modified <file-name>`
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-8. Usage
-For detailed usage instructions and options, refer to the help message:
-`./internsctl --help`
+### `npm run eject`
 
-9. Version
-`--version`
-Current version: v0.1.0
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-# Task2
-## Web Development
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
+## Learn More
 
-## My Website
-Welcome to the repository for "My Website," a simple web project designed to showcase basic functionality and features. Below, you'll find information on setting up the project, its structure, and how to run it.
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-## Project Structure
-The project is divided into three main pages:
-1. Home Page (index.html): Displays a welcome message and basic content.
-2. Login Page (login.html): Features a login form connected to a MongoDB database for authentication.
-3. Contact Us Page (contact.html): Includes a contact form whose submissions are stored in a MongoDB database.
+To learn React, check out the [React documentation](https://reactjs.org/).
 
-## Setup and Installation
-Follow these steps to set up and run the project locally:
+### Code Splitting
 
-1. Clone the Repository: `git clone https://github.com/your-username/my-website.git
-cd my-website`
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-2. Install Dependencies:
-`npm install`
+### Analyzing the Bundle Size
 
-3. Database Setup:
-a. Ensure you have MongoDB installed and running.
-b. Configure the database connection in server.js.
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-4. Run the Server:
-`node server.js`
+### Making a Progressive Web App
 
-5. Access the Website:
-Open your web browser and go to `http://localhost:3000` to view the website.
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-## Dependencies
-The project relies on the following Node.js packages:
-- express
-- mongoose
-- express-session
-- bcrypt
-Make sure to install these dependencies using npm install.
+### Advanced Configuration
 
-## Additional Information
-The project includes a responsive design using CSS media queries for basic desktop and mobile support.
-The login and contact form functionalities are connected to a MongoDB database.
-Feel free to explore and enhance the project as needed.
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-## Thanks
-Thank you for checking out "My Website"! If you have any questions or suggestions, feel free to reach out.
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
